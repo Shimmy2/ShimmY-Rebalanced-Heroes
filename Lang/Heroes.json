@@ -1,0 +1,28 @@
+{
+    "simi": {    
+        "spec":{
+            "speed": "All cretures recive +1 speed and +1 for every 20 hero levels.",
+            "sorcery": "Receives a 5% per level bonus to Sorcery skill percentage.",
+            "eagle": "Receives a 5% per level bonus to Eagle Eye skill percentage.",
+            "archery": "Receives a 5% per level bonus to Archery skill percentage.",
+            "armorer": "Receives a 5% per level bonus to Armorer skill percentage.",
+            "intel": "Receives a 5% per level bonus to Intelligence skill percentage.",
+            "aid": "Receives a 5% per level bonus to First Aid skill.",
+            "gold": "Increases kingdom's income by 350 gold per day.",
+            "offense": "Receives a 5% per level bonus to Offense skill percentage.",
+            "estates": "Receives a 5% per level bonus to Estates skill.",
+            "resistance": "Receives a 5% per level bonus to Resistance skill.",
+            "air": "Increases the attack and defense skills of any Air Elemental or Storm Elemental for each level attained after 2nd level.",
+            "bless": "Casts Bless with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+            "haste": "Casts Haste with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+            "ice": "Casts Ice Bolt with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+            "lightning": "Casts Lightning Bolt with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+            "fireball": "Casts Fireball with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+            "slayer": "Casts Slayer with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+            "weakness": "Casts Weakness with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+            "precision": "Casts Precision with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+            "sorrow": "Casts Sorrow with increased effect, Sorrow allways decreases a unit's Morale rating by 3.",
+            "fireshield": "Casts Fire Shield with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+	"caption": {
+		"en_US": "ShimmY Rebalanced Heroes",
+		"ru_RU": "",
+		"ua_UA": ""
+	},
+	"description": {
+		"full": {
+			"en_US": "readme.txt",
+			"ru_RU": "",
+			"ua_UA": ""
+		},
+		"short": {
+			"en_US": "",
+			"ru_RU": "",
+			"ua_UA": ""
+		}
+	},
+	"author": "Simi",
+	"homepage": "",
+	"icon": {
+		"file": "Hero_Loynis.png",
+		"index": 0
+	},
+	"mod_version": "1.2",
+	"priority": -1,
+	"compatibility": {
+		"class": "default",
+		"entries": {}
+	},
+	"platform": "era",
+	"info_version": "1.0",
+	"plugins": {},
+	"category": "gameplay"
+}
