@@ -22,7 +22,7 @@
 		"file": "Hero_Loynis.png",
 		"index": 0
 	},
-	"mod_version": "1.2",
+	"mod_version": "1.0",
 	"priority": -1,
 	"compatibility": {
 		"class": "default",
