@@ -1,5 +1,4 @@
 Rebalanced heroes Specialities and Starting Skills
-(Author: Simi)
 
 
 
