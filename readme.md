@@ -6,7 +6,7 @@ Aimed to ballance starting specialties/ skills and remove useless or duplicate s
 ## Description
 - Added new Lightning Bolt, Fire Shield and Sorrow spell specialties.
 - Added new Air Elemental creature specialty.
-- No more duplicate specialties from the samne faction and no more Navigation specialty.
+- No more duplicate specialties from the same faction and no more Navigation specialty.
 - All Tower might heroes start with Learning Secondary Skill instead of Mysticism/ Scholar.
 - Most Eagle Eye specialties have been moved to might heroes, to synergize with Eagle Eye I or II.
 - Speed specailty now gets +1 speed and +1 extra speed for every 20 levels.
