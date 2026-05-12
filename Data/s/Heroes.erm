@@ -1,0 +1,315 @@
+ZVSE2
+
+!?FU(OnStartOrLoad);
+
+//Sir Mullich
+!!UN:C5138025/1/1;    /set speed 1
+!!SN:H^spec^/(HERO_SIR_MULLICH)/2/^%T(simi.spec.speed)^;
+
+//Silvia
+!!HE(HERO_SYLVIA):X0/(SKILL_EAGLE_EYE);
+!!if&i^eaglEyeSpec^;
+  !!SN:H^spec^/(HERO_SYLVIA)/2/^%T(simi.spec.eagle)%T(wog.75.spec)^;
+!!el; 
+  !!SN:H^spec^/(HERO_SYLVIA)/2/^%T(simi.spec.eagle)^;
+!!en;
+!!UN:G2/3/1/3 G2/3/3/3;
+
+//Sanya
+!!HE(HERO_SANYA):X0/(SKILL_INTELLIGENCE);
+!!SN:H^spec^/(HERO_SANYA)/2/^%T(simi.spec.intel)^;
+
+//Malcom 
+!!UN:G2/28/1/28 G2/28/3/28;
+
+//Thane
+!!HE(HERO_THANE):X0/(SKILL_ARCHERY);
+!!SN:H^spec^/(HERO_THANE)/2/^%T(simi.spec.archery)^;
+
+//Iona 
+!!UN:G2/39/1/39 G2/39/3/39;
+
+//Serena
+!!HE(HERO_SERENA):X0/(SKILL_SORCERY);
+!!UN:P789/?(critSorcery:y);
+!!if&(critSorcery)<>(FALSE);
+  !!SN:H^spec^/(HERO_SERENA)/2/^%T(es.789.spec)^;
+!!el;
+  !!SN:H^spec^/(HERO_SERENA)/2/^%T(simi.spec.sorcery)^;
+!!en;
+
+//Daremyth   
+!!HE(HERO_DAREMYTH):X3/(SPELL_PRECISION);
+!!if&i^wog_39_enabled^/i^js_hota_specialties_spells^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_DAREMYTH)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_DAREMYTH)/2/^%T(jsMod.spell.44.desc.spec)%(msg)^;
+!!el&i^wog_39_enabled^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_DAREMYTH)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_DAREMYTH)/2/^%T(simi.spec.precision)%(msg)^;
+!!el&i^js_hota_specialties_spells^;
+  !!SN:H^spec^/(HERO_DAREMYTH)/2/^%T(simi.spec.precision)%T(jsMod.spell.44.desc.spec)^;
+!!el;   
+  !!SN:H^spec^/(HERO_DAREMYTH)/2/^%T(simi.spec.precision)^;
+!!en;
+
+//Pyre
+!!HE(HERO_PYRE):X0/(SKILL_ARMORER);
+!!SN:H^spec^/(HERO_PYRE)/2/^%T(simi.spec.armorer)^;
+
+//Olema   
+!!HE(HERO_OLEMA):X3/(SPELL_FIRE_SHIELD);
+!!if&i^wog_39_enabled^/i^js_hota_specialties_spells^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_OLEMA)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_OLEMA)/2/^%T(jsMod.spell.default.desc.spec)%(msg)^;
+!!el&i^wog_39_enabled^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_OLEMA)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_OLEMA)/2/^%T(simi.spec.fireshield)%(msg)^;
+!!el&i^js_hota_specialties_spells^;
+  !!SN:H^spec^/(HERO_OLEMA)/2/^%T(simi.spec.fireshield)%T(jsMod.spell.default.desc.spec)^;
+!!el;   
+  !!SN:H^spec^/(HERO_OLEMA)/2/^%T(simi.spec.fireshield)^;
+!!en;
+
+//Nimbus   
+!!HE(HERO_NIMBUS):X3/(SPELL_SORROW);
+!!if&i^wog_39_enabled^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_NIMBUS)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_NIMBUS)/2/^%T(simi.spec.sorrow)%(msg)^;
+!!el;   
+  !!SN:H^spec^/(HERO_NIMBUS)/2/^%T(simi.spec.sorrow)^;
+!!en;
+
+//Damacon 
+!!HE(HERO_DAMACON):X0/(SKILL_EAGLE_EYE);
+!!if&i^eaglEyeSpec^;
+  !!SN:H^spec^/(HERO_DAMACON)/2/^%T(simi.spec.eagle)%T(wog.75.spec)^;
+!!el; 
+  !!SN:H^spec^/(HERO_DAMACON)/2/^%T(simi.spec.eagle)^;
+!!en;
+!!UN:G2/84/1/84 G2/84/3/84;
+
+//Alamar  
+!!HE(HERO_ALAMAR):X3/(SPELL_LIGHTNING_BOLT);
+!!if&i^wog_39_enabled^/i^js_hota_specialties_spells^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_ALAMAR)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_ALAMAR)/2/^%T(jsMod.spell.default.desc.spec)%(msg)^;
+!!el&i^wog_39_enabled^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_ALAMAR)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_ALAMAR)/2/^%T(simi.spec.lightning)%(msg)^;
+!!el&i^js_hota_specialties_spells^;
+  !!SN:H^spec^/(HERO_ALAMAR)/2/^%T(simi.spec.lightning)%T(jsMod.spell.default.desc.spec)^;
+!!el;   
+  !!SN:H^spec^/(HERO_ALAMAR)/2/^%T(simi.spec.lightning)^;
+!!en;
+
+//Jeddite 
+!!UN:G2/91/1/91 G2/91/3/91;
+
+//Geon
+!!HE(HERO_GEON):X2/(RES_GOLD);
+!!if&i^js_buffResourceSpecialties^;
+  !!SN:H^spec^/(HERO_GEON)/2/^%T(simi.spec.gold)%T(jsMod.secSkill.resource.desc.spec)^;
+!!el;
+  !!SN:H^spec^/(HERO_GEON)/2/^%T(simi.spec.gold)^;
+!!en;
+
+//Krellion 
+!!HE(HERO_KRELLION):X0/(SKILL_EAGLE_EYE);
+!!if&i^eaglEyeSpec^;
+  !!SN:H^spec^/(HERO_KRELLION)/2/^%T(simi.spec.eagle)%T(wog.75.spec)^;
+!!el; 
+  !!SN:H^spec^/(HERO_KRELLION)/2/^%T(simi.spec.eagle)^;
+!!en;
+!!UN:G2/101/1/101 G2/101/3/101;
+
+//Vey
+!!UN:G2/105/1/105 G2/105/3/105;
+
+//Gundula  
+!!HE(HERO_GUNDULA):X0/(SKILL_ARCHERY);
+!!SN:H^spec^/(HERO_GUNDULA)/2/^%T(simi.spec.archery)^;
+
+//Oris
+!!HE(HERO_ORIS):X0/(SKILL_FIRST_AID);
+!!if&i^ES_medicine_enabled^;
+  !!SN:H^spec^/(HERO_ORIS)/2/^%T(es.782.spec)^;
+!!el;
+  !!SN:H^spec^/(HERO_ORIS)/2/^%T(simi.spec.aid)^;
+!!en;
+!!if&i^WarMachineSpec^;
+  !!SN:H^spec^/(HERO_ORIS)/2/?(origDesc:z) H^spec^/(HERO_ORIS)/2/^%(origDesc)%T(simi.spec.firstAid)^;
+!!en;
+
+//Bron   
+!!HE(HERO_BRON):X0/(SKILL_RESISTANCE);  
+!!if&i^wog_39_enabled^;
+  !!FU(WOG_39_GetSkillSpecText):P(HERO_BRON)/(SKILL_RESISTANCE)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_BRON)/2/^%T(simi.spec.resistance)%(msg)^;
+!!el;
+  !!SN:H^spec^/(HERO_BRON)/2/^%T(simi.spec.resistance)^;
+!!en;
+
+//Gerwulf
+!!HE(HERO_GERWULF):X0/(SKILL_EAGLE_EYE);
+!!if&i^eaglEyeSpec^;
+  !!SN:H^spec^/(HERO_GERWULF)/2/^%T(simi.spec.eagle)%T(wog.75.spec)^;
+!!el; 
+  !!SN:H^spec^/(HERO_GERWULF)/2/^%T(simi.spec.eagle)^;
+!!en;
+!!UN:G2/118/1/118 G2/118/3/118;
+
+//Voy
+!!HE(HERO_VOY):X5/2;
+!!SN:H^spec^/(HERO_VOY)/2/^%T(simi.spec.speed)^;
+
+//Tiva
+!!HE(HERO_TIVA):X3/(SPELL_BLESS);
+!!if&i^wog_39_enabled^/i^js_hota_specialties_spells^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_TIVA)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_TIVA)/2/^%T(jsMod.spell.53.desc.spec)%(msg)^;
+!!el&i^wog_39_enabled^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_TIVA)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_TIVA)/2/^%T(simi.spec.bless)%(msg)^;
+!!el&i^js_hota_specialties_spells^;
+  !!SN:H^spec^/(HERO_TIVA)/2/^%T(simi.spec.bless)%T(jsMod.spell.53.desc.spec)^;
+!!el;   
+  !!SN:H^spec^/(HERO_TIVA)/2/^%T(simi.spec.bless)^;
+!!en;
+
+//Pasis
+!!HE(HERO_PASIS):X0/(SKILL_OFFENCE);
+  !!SN:H^spec^/(HERO_PASIS)/2/^%T(simi.spec.offense)^;
+
+//Thunar
+!!HE(HERO_THUNAR):X0/(SKILL_ESTATES);
+!!UN:P793/?(economy:y);
+!!if&(economy)<>(FALSE);
+  !!SN:H^spec^/(HERO_THUNAR)/2/^%T(es.793.spec)^;
+!!el;
+  !!SN:H^spec^/(HERO_THUNAR)/2/^%T(simi.spec.estates)^;
+!!en;
+
+//Ignissa
+!!HE(HERO_IGNISSA):X0/(SKILL_FIRST_AID);
+!!if&i^ES_medicine_enabled^;
+  !!SN:H^spec^/(HERO_IGNISSA)/2/^%T(es.782.spec)^;
+!!el;
+  !!SN:H^spec^/(HERO_IGNISSA)/2/^%T(simi.spec.aid)^;
+!!en;
+!!if&i^WarMachineSpec^;
+  !!SN:H^spec^/(HERO_IGNISSA)/2/?(origDesc:z) H^spec^/(HERO_IGNISSA)/2/^%(origDesc)%T(simi.spec.firstAid)^;
+!!en;
+
+//Lacus
+!!HE(HERO_LACUS):X1/(MON_AIR_ELEMENTAL);
+!!if&i^wog_39_enabled^;
+  !!VR(monId:y):S(MON_AIR_ELEMENTAL);
+  !!FU(WOG_39_GetMonSpecText):P(HERO_LACUS)/(monId)/?(msg:z);
+  !!SN:H^spec^/(HERO_LACUS)/2/(msg);
+!!el&i^js_hota_specialties_creatures^; 
+  !!SN:H^spec^/i/2/?(specDesc:z);
+  !!FU(js_StringReplaceINT):P(specDesc)/?(newSpecDesc:z)/^1^/^20^;
+  !!SN:H^spec^/i/2/(newSpecDesc);
+!!el;
+  !!SN:H^spec^/(HERO_LACUS)/2/^%T(simi.spec.air)^;
+!!en;
+
+//Monere  
+!!UN:G2/132/1/132 G2/132/3/132;
+
+//Erdamon 
+!!UN:G2/133/1/133 G2/133/3/133;
+
+//Fiur
+!!UN:G2/134/1/134 G2/134/3/134;
+
+//Kalt   
+!!UN:G2/135/1/135 G2/135/3/135;
+
+//Inteus
+!!HE(HERO_INTEUS):X3/(SPELL_FIREBALL);
+!!if&i^wog_39_enabled^/i^js_hota_specialties_spells^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_INTEUS)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_INTEUS)/2/^%T(jsMod.spell.default.desc.spec)%(msg)^;
+!!el&i^wog_39_enabled^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_INTEUS)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_INTEUS)/2/^%T(simi.spec.fireball)%(msg)^;
+!!el&i^js_hota_specialties_spells^;
+  !!SN:H^spec^/(HERO_INTEUS)/2/^%T(simi.spec.fireball)%T(jsMod.spell.default.desc.spec)^;
+!!el;
+  !!SN:H^spec^/(HERO_INTEUS)/2/^%T(simi.spec.fireball)^;
+!!en;
+
+//Gelare
+!!HE(HERO_GELARE):X3/(SPELL_ICE_BOLT);
+!!if&i^wog_39_enabled^/i^js_hota_specialties_spells^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_GELARE)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_GELARE)/2/^%T(jsMod.spell.default.desc.spec)%(msg)^;
+!!el&i^wog_39_enabled^;
+  !!FU(WOG_39_GetSpellSpecText):P(HERO_GELARE)/?(result:y)/?(msg:z);
+  !!SN:H^spec^/(HERO_GELARE)/2/^%T(simi.spec.ice)%(msg)^;
+!!el&i^js_hota_specialties_spells^;
+  !!SN:H^spec^/(HERO_GELARE)/2/^%T(simi.spec.ice)%T(jsMod.spell.default.desc.spec)^;
+!!el;
+  !!SN:H^spec^/(HERO_GELARE)/2/^%T(simi.spec.ice)^;
+!!en;
+
+//Boragus
+!!UN:G2/154/1/154 G2/154/3/154;
+
+!HE(HERO_MALEKITH):X0/(SKILL_RESISTANCE);
+
+!?FU(OnHeroGainLevel);
+!!HE(CURRENT_HERO):X?(spec:y)/?(subSpec:y) E?x1/?(level:y);
+!!if&(spec)=5;
+  !!VR(speed:y):S(level) :20 +1;
+  !!UN:C5138025/1/(speed);    /set speed +1
+!!en;
+
+!?FU(OnHeroGainLevel)&i^wog_39_enabled^;
+!!FU(WOG_39_GetSkillSpecText):P(HERO_BRON)/(SKILL_RESISTANCE)/?(result:y)/?(msg:z);
+!!SN:H^spec^/(HERO_BRON)/2/^%T(simi.spec.resistance)%(msg)^;
+
+!?FU(OnBeforeBattleAction);
+!!BG:A?(action:y);
+!!if&(action)=(BATTLE_ACTION_HERO_CAST);
+  !!HEi^battle_hero_%i(battle_current_side)^:X?(spec:y)/?(spell:y);
+  !!if&(spec)=3/(spell)=(SPELL_SORROW);
+    !!SS(SPELL_SORROW):E0/3 E1/3 E2/3 E3/3;
+  !!en;
+!!en;
+
+!?FU(OnAfterBattleAction);
+!!SS(SPELL_SORROW):E0/1 E1/1 E2/2 E3/2;
+
+!?FU(OnStartOrLoad);
+!!SN:L^EraPlugins\erm_hooker.era^/?y1;
+
+!!if&y1<>0;
+  !!SN:Ay1/^SetHook^/?y2;
+  !!SN&y2:Ey2/1/4474597/(shimy_CastFireShieldSpell); 004446E5
+!!en;
+
+!?FU(shimy_CastFireShieldSpell);
+!!UN:Cx1/(STRUCT_HOOK_CONTEXT_ECX)/4/?(spellId:y);
+!!UN:Cx1/(STRUCT_HOOK_CONTEXT_EBP)/4/?(ebp:y) C(ebp)/8/4/?(spellId:y);
+!!if&(spellId)=(SPELL_FIRE_SHIELD);
+  !!UN:Cx1/(STRUCT_HOOK_CONTEXT_EBP)/4/?(ebp:y) C(ebp)/20/4/?(hero:y);
+  !!if&(hero);
+    !!UN:C(hero)/26/4/?(heroId:y);
+
+    !!HE(heroId):X?(specType:y)/?(specSkill:y);
+    !!if&(specType)=3/(specSkill)=(SPELL_FIRE_SHIELD);
+      !!HE(heroId):Ed/?(heroLevel:y);
+      !!UN:Cx1/(STRUCT_HOOK_CONTEXT_ESI)/4/?(esi:y);
+      !!UN:C(esi)/120/4/?(monLevel:y);
+      !!VR(monLevel):+1;
+      !!VR(bonus:y):S(heroLevel) :(monLevel);
+      !!if&(bonus);
+        !!UN:Cx1/(STRUCT_HOOK_CONTEXT_EDI)/4/?(currentEffect:y);
+        !!VR(bonus):*10 *(currentEffect) :100 +(currentEffect) F1/100;
+        !!UN:Cx1/(STRUCT_HOOK_CONTEXT_EDI)/4/(bonus:y);
+      !!en;
+    !!en;
+  !!en;
+!!en;
