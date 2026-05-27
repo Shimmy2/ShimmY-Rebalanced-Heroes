@@ -2,7 +2,7 @@
 
 
 ## Main Features
-Aimed to ballance starting specialties/ skills and remove useless or duplicate specialties. Added 3 new spell specialties and 1 new creture specialty. Ballanced Eagle Eye I and Medicine Wog options.
+Aimed to ballance starting specialties/ skills and remove useless or duplicate specialties. Added 3 new spell specialties and 1 new creture specialty. Ballanced Eagle Eye I and Medicine Wog options to better synergize with hero specialties.
 
 ## Description
 - Removed Eagle Eye I option Wisdom requirement to be more of a might skill. Eagle Eye I specialists can learn level 5 spells after level 15.
