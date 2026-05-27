@@ -8,8 +8,8 @@ ZVSE2
 
 //Silvia
 !!HE(HERO_SYLVIA):X0/(SKILL_EAGLE_EYE);
-!!if&i^eaglEyeSpec^;
-  !!SN:H^spec^/(HERO_SYLVIA)/2/^%T(simi.spec.eagle)%T(wog.75.spec)^;
+!!if&i^eagleEyeSpec^;
+  !!SN:H^spec^/(HERO_SYLVIA)/2/^%T(simi.spec.eagle)%T(simi.spec.eagleEyeI)^;
 !!el; 
   !!SN:H^spec^/(HERO_SYLVIA)/2/^%T(simi.spec.eagle)^;
 !!en;
@@ -81,8 +81,8 @@ ZVSE2
 
 //Damacon 
 !!HE(HERO_DAMACON):X0/(SKILL_EAGLE_EYE);
-!!if&i^eaglEyeSpec^;
-  !!SN:H^spec^/(HERO_DAMACON)/2/^%T(simi.spec.eagle)%T(wog.75.spec)^;
+!!if&i^eagleEyeSpec^;
+  !!SN:H^spec^/(HERO_DAMACON)/2/^%T(simi.spec.eagle)%T(simi.spec.eagleEyeI)^;
 !!el; 
   !!SN:H^spec^/(HERO_DAMACON)/2/^%T(simi.spec.eagle)^;
 !!en;
@@ -115,8 +115,8 @@ ZVSE2
 
 //Krellion 
 !!HE(HERO_KRELLION):X0/(SKILL_EAGLE_EYE);
-!!if&i^eaglEyeSpec^;
-  !!SN:H^spec^/(HERO_KRELLION)/2/^%T(simi.spec.eagle)%T(wog.75.spec)^;
+!!if&i^eagleEyeSpec^;
+  !!SN:H^spec^/(HERO_KRELLION)/2/^%T(simi.spec.eagle)%T(simi.spec.eagleEyeI)^;
 !!el; 
   !!SN:H^spec^/(HERO_KRELLION)/2/^%T(simi.spec.eagle)^;
 !!en;
@@ -132,7 +132,7 @@ ZVSE2
 //Oris
 !!HE(HERO_ORIS):X0/(SKILL_FIRST_AID);
 !!if&i^ES_medicine_enabled^;
-  !!SN:H^spec^/(HERO_ORIS)/2/^%T(es.782.spec)^;
+  !!SN:H^spec^/(HERO_ORIS)/2/^%T(simi.medicine.spec)^;
 !!el;
   !!SN:H^spec^/(HERO_ORIS)/2/^%T(simi.spec.aid)^;
 !!en;
@@ -151,8 +151,8 @@ ZVSE2
 
 //Gerwulf
 !!HE(HERO_GERWULF):X0/(SKILL_EAGLE_EYE);
-!!if&i^eaglEyeSpec^;
-  !!SN:H^spec^/(HERO_GERWULF)/2/^%T(simi.spec.eagle)%T(wog.75.spec)^;
+!!if&i^eagleEyeSpec^;
+  !!SN:H^spec^/(HERO_GERWULF)/2/^%T(simi.spec.eagle)%T(simi.spec.eagleEyeI)^;
 !!el; 
   !!SN:H^spec^/(HERO_GERWULF)/2/^%T(simi.spec.eagle)^;
 !!en;
@@ -192,7 +192,7 @@ ZVSE2
 //Ignissa
 !!HE(HERO_IGNISSA):X0/(SKILL_FIRST_AID);
 !!if&i^ES_medicine_enabled^;
-  !!SN:H^spec^/(HERO_IGNISSA)/2/^%T(es.782.spec)^;
+  !!SN:H^spec^/(HERO_IGNISSA)/2/^%T(simi.medicine.spec)^;
 !!el;
   !!SN:H^spec^/(HERO_IGNISSA)/2/^%T(simi.spec.aid)^;
 !!en;

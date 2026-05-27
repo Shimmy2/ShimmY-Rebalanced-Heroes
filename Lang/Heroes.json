@@ -23,6 +23,15 @@
             "precision": "Casts Precision with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
             "sorrow": "Casts Sorrow with increased effect, Sorrow allways decreases a unit's Morale rating by 3.",
             "fireshield": "Casts Fire Shield with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
-        }
+            "eagleEyeI": "\n\nEagle eye specialists can learn up to level 5 spells after level 15.",
+        },
+        "medicine": {
+            "name": "{Medicine}",
+            "desc1": "{Basic Medicine}\n\nIncreases the health of allied creatures by 5%\nAllows you to control a First Aid Tent healing 26-50 points of damage",
+            "desc2": "{Advanced Medicine}\n\nIncreases the health of allied creatures by 10%\nAllows you to control a First Aid Tent healing 51-75 points of damage",
+            "desc3": "{Expert Medicine}\n\nIncreases the health of allied creatures by 15% (minumum 1)\nAllows you to control a First Aid Tent healing 76-100 points of damage",
+            "spec": "Receives a 5% per level bonus to Medicine skill percentage.",
+            "battleLog": "First Aid Tent healing is increased by @hp@ points."
+        },
     }
 }
