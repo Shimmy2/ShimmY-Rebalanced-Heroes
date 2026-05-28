@@ -1,4 +1,4 @@
-## Rebalanced Heroes
+# Rebalanced Heroes
 
 
 ## Main Features
@@ -6,7 +6,7 @@ Aimed to ballance starting specialties/ skills and remove useless or duplicate s
 
 ## Description
 - Removed Eagle Eye I option Wisdom requirement to be more of a might skill. Eagle Eye I specialists can learn level 5 spells after level 15.
-- Medicine option now gives 5/10/15% health bonus instead of 1/2/3. Medicine specilists get a 5% per level bonus.
+- Medicine option now gives 5/10/15% health bonus instead of 1/2/3. Medicine specialists get a 5% per level bonus.
 - Added new Lightning Bolt, Fire Shield and Sorrow spell specialties.
 - Added new Air Elemental creature specialty.
 - No more duplicate specialties from the same faction and no more Navigation specialty.
