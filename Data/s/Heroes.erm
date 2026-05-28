@@ -305,7 +305,7 @@ ZVSE2
       !!UN:C(esi)/120/4/?(monLevel:y);
       !!VR(monLevel):+1;
       !!UN:Cx1/(STRUCT_HOOK_CONTEXT_EDI)/4/?(currentEffect:y);
-      !!VR(bonus):S(heroLevel)*(currentEffect)*10:(monLevel):100+(currentEffect) F1/100;
+      !!VR(bonus:y):S(heroLevel)*(currentEffect)*10:(monLevel):100+(currentEffect) F1/100;
       !!if&(bonus)>(currentEffect);
         !!UN:Cx1/(STRUCT_HOOK_CONTEXT_EDI)/4/(bonus:y);
       !!en;
