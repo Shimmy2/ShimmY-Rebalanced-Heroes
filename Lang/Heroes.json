@@ -11,7 +11,7 @@
             "gold": "Increases kingdom's income by 350 gold per day.",
             "offense": "Receives a 5% per level bonus to Offense skill percentage.",
             "estates": "Receives a 5% per level bonus to Estates skill.",
-            "resistance": "Receives a 5% per level bonus to Resistance skill.",
+            "resistance": "Receives a 5% per level bonus to Resistance skill percentage.",
             "air": "Increases the attack and defense skills of any Air Elemental or Storm Elemental for each level attained after 2nd level.",
             "bless": "Casts Bless with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
             "haste": "Casts Haste with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
@@ -31,7 +31,7 @@
             "desc2": "{Advanced Medicine}\n\nIncreases the health of allied creatures by 10%\nAllows you to control a First Aid Tent healing 51-75 points of damage",
             "desc3": "{Expert Medicine}\n\nIncreases the health of allied creatures by 15% (minumum 1)\nAllows you to control a First Aid Tent healing 76-100 points of damage",
             "spec": "Receives a 5% per level bonus to Medicine skill percentage.",
-            "battleLog": "First Aid Tent healing is increased by @hp@ points."
+            "battleLog": "First Aid Tent healing is increased by @hp@ points.",
         },
     }
 }
